@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Canvas from './src/components/Canvas';
+import Viewer from './src/components/Viewer';
+
+console.log(Canvas);
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Viewer />
       <StatusBar style="auto" />
     </View>
   );
